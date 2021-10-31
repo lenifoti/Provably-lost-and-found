@@ -17,7 +17,7 @@ An example game: Minesweeper where a successful player gets a prize proportional
 Problems to be solved:
 - Shared space: The space must be sharable. Items the have been revealed are know to all.
 - Provably hidden: There is no way for any player or the creator to predict the location of an object without 'visiting' it.
-- Sybil resistance: There is no way that a player can use multiple identities to improve their chances of finding a loss object.
+- Sybil resistance: There is no way that a player can use multiple identities to improve their chances of finding a lost object.
 - Bot resistance: There is no way that a program can gain advantage over a person
 - Resistant to conspiracy: There is no way that 2 or more players can improve their chances by conspiring together.
 - Concentrated distribution: There is a means of increasing the likelyhood of location of the object.
