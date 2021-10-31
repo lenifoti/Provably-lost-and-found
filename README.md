@@ -1,5 +1,5 @@
 # Provably-lost-and-found
-An experiment in systems that allow the the owner to lose a digital object within a digital space. Where that object can only be found by visiting that space. 
+An experiment in systems that allow the the owner to lose a digital object within a digital space. Where that object can only be found by visiting a location within that space. 
 
 1. A _creator_ generates a digital _artefact_ (e.g. an NFT)
 2. The _creator_ generates a _distributionProfile_ across a shared _digitaSpace_
