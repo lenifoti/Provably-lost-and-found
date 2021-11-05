@@ -33,3 +33,4 @@ IDEAS:
 - proximity rule will reveal anything already known about the surrounding location
 - random backoff timer for accepting for presenting to the blockchain
 - re-trace check by presenting merkle proof of current location.
+- probability ramp function for each player to prevent sybil attacks.
