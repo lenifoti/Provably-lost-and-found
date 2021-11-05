@@ -2,8 +2,8 @@
 An experiment in systems that allow the the owner to lose a digital object within a digital space. Where that object can only be found by visiting a location within that space. 
 
 1. A _creator_ generates a digital _artefact_ (e.g. an NFT)
-2. The _creator_ generates a _distributionProfile_ across a shared _digitaSpace_
-3. The _creator_ presents the _distributionProfile_ and _digitaSpace_ to a _obfiscator_ that hides the _artefact_.
+2. The _creator_ generates a _distributionProfile_ across a shared _digitalSpace_
+3. The _creator_ presents the _distributionProfile_ and _digitalSpace_ to a _obfiscator_ that hides the _artefact_.
 4. The _creator_ assigns the discovery processto a _revealer_.
 5. A _game_ defines the rules that constrain the locations available to _searchers_ at any point in time.
 6. A  _Searcher_ submits a location to the _revealer_ that determines whether there is an item at that location.
@@ -27,3 +27,9 @@ Game -> _searcher_ "you have permission to search a location."
 Searcher -> _revealer_ "is there an _artefact_ at this location." 
 
 Reference: BitKong - a betting game where fruit are revealed.
+
+
+IDEAS:
+- proximity rule will reveal anything already known about the surrounding location
+- random backoff timer for accepting for presenting to the blockchain
+- re-trace check by presenting merkle proof of current location.
