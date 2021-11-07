@@ -70,3 +70,10 @@ Each item or batch of items will have a probability of being found.
 The probability that they can be found could be proportionate to the number of players searching.  This means that the time to find all the items reduces as the number of players increase.  Alternatively, the probability could be purely time-based, meaning that the time to find all items will fbe fixed and early entrants will have a large advantage.
 It is possible that the locations in which these items can be found are not equal. Roads and parks might have a higher chance and agricultural, and private land. Sea would likely have a probability of zero. This must therefore be tied to the map in some way.  
 The event generation needs to use these parameters, along with randomness, to decide whether to generate a discovery event.
+
+**Defining a space**
+The space is an uneven grid, where each grid has a physical area proprition to is sparcity. Thus oceans and deserts can be considered as having lower likleyhood of find items. The master space is has a value in each grid: a flag representing the presnece of an NFT and a sparcity value.
+This can be arranged as a deep merkle tree that is ordered in a way that keeps localities together. In this way, a player's movements can be recorded as changes to a limited number of nodes of the tree.
+
+**Recoding visits**
+Players can keep their own copy of their journey through the space as a delta from the master. A move to a new location is represented by a proof that shows a delta between the last known location and the current location is a single change in a merkle tree leaf. To achieve this the Revealer must maintain the last state of the Player'smerkle tree delta. 
